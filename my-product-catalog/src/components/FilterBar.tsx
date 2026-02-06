@@ -38,12 +38,12 @@ export default function FilterBar() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-white rounded-2xl shadow-xl p-6 mb-8 border border-gray-100"
+      className="bg-white rounded-2xl shadow-sm p-6 mb-8 border border-gray-100"
     >
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
         {/* Categories */}
         <div className="flex-1">
-          <label className="block text-sm font-display font-semibold text-gray-700 mb-3">
+          <label className="block text-sm font-display font-semibold text-gray-700 mb-4">
             Category
           </label>
           <div className="flex flex-wrap gap-2">
@@ -51,7 +51,7 @@ export default function FilterBar() {
               onClick={() => handleCategoryChange("all")}
               className={`px-4 py-2 rounded-full font-body text-sm font-medium transition-all transform hover:scale-105 ${
                 selectedCategory === "all"
-                  ? "bg-linear-to-r from-primary-600 to-primary-500 text-white shadow-lg"
+                  ? "bg-slate-900 text-white shadow-lg"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
@@ -63,7 +63,7 @@ export default function FilterBar() {
                 onClick={() => handleCategoryChange(category)}
                 className={`px-4 py-2 rounded-full font-body text-sm font-medium transition-all transform hover:scale-105 capitalize ${
                   selectedCategory === category
-                    ? "bg-linear-to-r from-primary-600 to-primary-500 text-white shadow-lg"
+                    ? "bg-slate-900 text-white shadow-lg"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
@@ -77,7 +77,7 @@ export default function FilterBar() {
         <div className="lg:w-64">
           <label
             htmlFor="sort"
-            className="block text-sm font-display font-semibold text-gray-700 mb-3"
+            className="block text-sm font-display font-semibold text-gray-700 mb-2"
           >
             Sort By
           </label>
@@ -85,7 +85,7 @@ export default function FilterBar() {
             id="sort"
             value={sortBy}
             onChange={(e) => handleSortChange(e.target.value as SortOption)}
-            className="w-full px-4 py-2.5 rounded-xl border-2 border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none font-body text-sm bg-white transition-all"
+            className="w-full px-4  py-2.5 rounded-xl border-2 border-gray-200 focus:border-primary-300 focus:ring-1  outline-none font-body text-sm bg-white transition-all"
           >
             <option value="default">Default</option>
             <option value="price-asc">Price: Low to High</option>
@@ -98,7 +98,7 @@ export default function FilterBar() {
         <div className="lg:pt-7">
           <button
             onClick={handleReset}
-            className="px-6 py-2.5 rounded-xl border-2 border-gray-300 text-gray-700 hover:border-primary-500 hover:text-primary-600 font-body text-sm font-medium transition-all transform hover:scale-105"
+            className="cursor-pointer px-6 py-2.5 rounded-xl border-2 border-gray-300 text-gray-700 hover:border-primary-500 hover:text-primary-600 font-body text-sm font-medium transition-all transform hover:scale-105"
           >
             Reset Filters
           </button>

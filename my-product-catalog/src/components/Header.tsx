@@ -42,7 +42,7 @@ export default function Header() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="hidden md:flex items-center space-x-8"
+            className="hidden md:flex gap-6 items-center space-x-8"
           >
             <a
               href="#"
@@ -62,7 +62,7 @@ export default function Header() {
             >
               About
             </a>
-            <button className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-full transition-all transform hover:scale-105 font-body text-sm font-medium shadow-lg">
+            <button className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-full transition-all transform hover:scale-105 font-body text-lg font-medium shadow-lg">
               Sign In
             </button>
           </motion.nav>

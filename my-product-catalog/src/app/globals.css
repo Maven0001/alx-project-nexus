@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap");
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --primary-50: #fdf4f3;
@@ -12,14 +9,8 @@
   --accent-500: #14b8a6;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  @apply bg-gradient-to-br from-gray-50 via-white to-gray-100;
+  @apply bg-linear-to-br from-gray-50 via-white to-gray-100;
   font-family: "Manrope", sans-serif;
 }
 

@@ -76,8 +76,8 @@ export default function Pagination({ totalPages }: PaginationProps) {
               onClick={() => handlePageChange(page as number)}
               className={`w-10 h-10 rounded-xl font-body font-medium transition-all transform hover:scale-110 ${
                 currentPage === page
-                  ? "bg-linear-to-r from-primary-600 to-primary-500 text-white shadow-lg"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  ? "bg-linear-to-r from-primary-600 to-primary-500 text-slate-900 shadow-lg"
+                  : " text-gray-700 hover:bg-gray-200"
               }`}
             >
               {page}
