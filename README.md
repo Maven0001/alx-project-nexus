@@ -1,9 +1,12 @@
-# Provide an overview of the ProDev Backend Engineering program.
+# Introduction to project Nexus Prodev FE
 
-- Outline major learnings, including:
+## Understanding Project Nexus
 
-- Key technologies covered (e.g., Mobile Development, Web Development, PWA etc.).
-- Important frontend development concepts (e.g. Nextjs, TailwindCSS, System Design and Analysis, TypeScript, GraphQL, API Integration,).
-- Challenges faced and solutions implemented.
+Project Nexus is a critical milestone in the ProDev Frontend Engineering program. It serves as a capstone experience where learners demonstrate their ability to apply frontend development skills to a real-world project. The goal is to showcase their knowledge, creativity, and technical ability by building a complete and functional application.
 
-- Best practices and personal takeaways.
+## Objectives of Project Nexus:
+
+- Apply learned frontend technologies to a real-world project.
+- Build a well-structured and responsive application.
+- Demonstrate problem-solving skills and critical thinking in UI/UX design.
+- Improve presentation and communication skills.
