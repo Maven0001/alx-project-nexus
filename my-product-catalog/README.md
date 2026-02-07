@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Building a Dynamic E-Commerce Product Catalog (Web)
 
-## Getting Started
+## Real-World Application
 
-First, run the development server:
+This project simulates a real-world scenario where developers must balance functional requirements with user experience considerations. By completing this project, participants will gain hands-on experience with:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Building scalable, maintainable frontends using modern technologies.
+- Optimizing performance for high-traffic scenarios through pagination and infinite scrolling.
+- Ensuring accessibility and responsiveness for diverse user bases.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This case study focuses on creating a dynamic e-commerce product catalog where users can **browse, filter, and sort products** seamlessly. The project emphasizes key industry practices such as API integration, responsive design, and advanced UI/UX enhancements for a real-world scenario.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+##Project Goals
+The primary objectives of the e-commerce product catalog are:
 
-## Learn More
+- API Integration: Learn to fetch and display data from APIs dynamically.
+- User Convenience: Implement filtering and sorting to improve product discovery.
+- Enhanced Experience: Develop a responsive, user-friendly interface with seamless navigation and optimized performance.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Frontend Framework
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js 14: React framework with App Router
+- React 18: Latest React with concurrent features
+- TypeScript 5: Type-safe development
 
-## Deploy on Vercel
+### State Management
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Redux Toolkit: Modern Redux with less boilerplate
+- React-Redux: Official React bindings for Redux
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Styling
+
+- Tailwind CSS: Utility-first CSS framework
+- Framer Motion: Production-ready animation library
+- Custom Design Tokens: Consistent theming
+
+### API
+
+- FakeStore API: Real e-commerce product data
+- Fetch API: Modern data fetching
+
+### State Management
+
+- Redux Slices
+- Products Slice
+
+## Key Features
+
+1. API Data Integration
+
+- Fetch and display product data dynamically from a backend API.
+- Ensure smooth loading of products with error handling and loading states.
+
+2. Filtering and Sorting
+
+- Category Filtering: Allow users to view products based on selected categories.
+- Price Sorting: Enable sorting by ascending or descending prices.
+- Multi-Criteria Filters: Combine filters for refined results.
+
+3. Pagination and Infinite Scrolling
+
+- Pagination: Provide numbered navigation for viewing products in chunks.
+  = Infinite Scrolling: Load products dynamically as users scroll, enhancing usability.
+
+4. Responsive Design
+
+- Ensure the catalog is fully responsive across devices, including desktops, tablets, and mobile phones.
