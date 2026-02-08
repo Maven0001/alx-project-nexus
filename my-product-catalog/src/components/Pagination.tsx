@@ -69,15 +69,15 @@ export default function Pagination({ totalPages }: PaginationProps) {
 
       {getPageNumbers().map((page, index) => (
         <div key={index}>
-          {page === "..." ? (
+          {page === "" ? (
             <span className="px-2 text-gray-500 font-body">...</span>
           ) : (
             <button
               onClick={() => handlePageChange(page as number)}
               className={`w-10 h-10 rounded-xl font-body font-medium transition-all transform hover:scale-110 ${
                 currentPage === page
-                  ? "bg-linear-to-r from-primary-600 to-primary-500 text-slate-900 shadow-lg"
-                  : " text-gray-700 hover:bg-gray-200"
+                  ? " text-slate-900 shadow-lg"
+                  : " text-gray-500 hover:bg-gray-200"
               }`}
             >
               {page}

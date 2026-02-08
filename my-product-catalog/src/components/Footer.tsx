@@ -115,8 +115,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400 font-body text-sm">
-            © 2026 Luxura. All rights reserved. Built with Next.js, Redux &
-            TypeScript.
+            © 2026 Luxura. All rights reserved.
           </p>
         </div>
       </div>

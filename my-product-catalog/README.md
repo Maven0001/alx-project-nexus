@@ -12,7 +12,8 @@ This project simulates a real-world scenario where developers must balance funct
 
 This case study focuses on creating a dynamic e-commerce product catalog where users can **browse, filter, and sort products** seamlessly. The project emphasizes key industry practices such as API integration, responsive design, and advanced UI/UX enhancements for a real-world scenario.
 
-##Project Goals
+## Project Goals
+
 The primary objectives of the e-commerce product catalog are:
 
 - API Integration: Learn to fetch and display data from APIs dynamically.

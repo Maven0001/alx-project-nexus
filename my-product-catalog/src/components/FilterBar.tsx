@@ -42,7 +42,7 @@ export default function FilterBar() {
     >
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
         {/* Categories */}
-        <div className="flex-1">
+        <div>
           <label className="block text-sm font-display font-semibold text-gray-700 mb-4">
             Category
           </label>
@@ -74,34 +74,36 @@ export default function FilterBar() {
         </div>
 
         {/* Sort */}
-        <div className="lg:w-64">
-          <label
-            htmlFor="sort"
-            className="block text-sm font-display font-semibold text-gray-700 mb-2"
-          >
-            Sort By
-          </label>
-          <select
-            id="sort"
-            value={sortBy}
-            onChange={(e) => handleSortChange(e.target.value as SortOption)}
-            className="w-full px-4  py-2.5 rounded-xl border-2 border-gray-200 focus:border-primary-300 focus:ring-1  outline-none font-body text-sm bg-white transition-all"
-          >
-            <option value="default">Default</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
-            <option value="rating">Highest Rated</option>
-          </select>
-        </div>
+        <div className="flex gap-4 items-end">
+          <div className="w-full">
+            <label
+              htmlFor="sort"
+              className="block text-sm font-display font-semibold text-gray-700 mb-2"
+            >
+              Sort By
+            </label>
+            <select
+              id="sort"
+              value={sortBy}
+              onChange={(e) => handleSortChange(e.target.value as SortOption)}
+              className="w-full px-4  py-2.5 rounded-xl border-2 border-gray-200 focus:border-primary-300 focus:ring-1  outline-none font-body text-sm bg-white transition-all"
+            >
+              <option value="default">Default</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+            </select>
+          </div>
 
-        {/* Reset */}
-        <div className="lg:pt-7">
-          <button
-            onClick={handleReset}
-            className="cursor-pointer px-6 py-2.5 rounded-xl border-2 border-gray-300 text-gray-700 hover:border-primary-500 hover:text-primary-600 font-body text-sm font-medium transition-all transform hover:scale-105"
-          >
-            Reset Filters
-          </button>
+          {/* Reset */}
+          <div>
+            <button
+              onClick={handleReset}
+              className="mt-2 cursor-pointer px-6 py-2.5 rounded-xl border-2 border-gray-300 text-gray-700 hover:border-primary-500 hover:text-primary-600 font-body text-sm font-medium transition-all transform hover:scale-105"
+            >
+              Reset
+            </button>
+          </div>
         </div>
       </div>
     </motion.div>

@@ -3,7 +3,7 @@ import { Product, ProductsState, SortOption } from "@/types/product";
 
 const API_URL = "https://fakestoreapi.com/products";
 
-// Async thunk to fetch products
+// Async  to fetch products
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async () => {

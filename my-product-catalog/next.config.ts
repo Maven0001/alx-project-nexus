@@ -1,5 +1,4 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: import("next").NextConfig = {
   images: {
     domains: ["fakestoreapi.com", "via.placeholder.com"],
     remotePatterns: [
